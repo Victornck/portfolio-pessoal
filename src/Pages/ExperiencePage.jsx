@@ -39,6 +39,9 @@ function ExperiencePage() {
                 <span className="text-sm text-zinc-400">{experience.date}</span>
               </div>
             </div>
+            <div className="opacity-55 w-20 mt-4">
+              <Separator />
+            </div>
 
             <p className="mt-3 text-zinc-400 leading-relaxed text-left">
               {experience.description}
