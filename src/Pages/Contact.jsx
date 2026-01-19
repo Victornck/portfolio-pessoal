@@ -27,7 +27,7 @@ const contacts = [
 
 function Contact() {
   return (
-    <div className="mt-24 text-center max-w-6xl mx-auto px-4">
+    <section id="contact" className="mt-24 text-center max-w-6xl mx-auto px-4">
       <span className="bg-gradient-to-r from-orange-400 to-purple-500 bg-clip-text text-transparent font-bold text-4xl">
         CONTATO
       </span>
@@ -37,7 +37,7 @@ function Contact() {
           <ContactCard key={contact.title} {...contact} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
