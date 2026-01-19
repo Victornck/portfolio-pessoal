@@ -3,13 +3,14 @@ import { Separator } from "@/components/ui/separator";
 
 const projects = [
   {
-    title: "TaskFlow",
+    title: "Taskify",
     description:
-      "Aplicação de gerenciamento de tarefas com foco em produtividade.",
-    stack: ["Next.js", "TypeScript", "Tailwind"],
-    demo: "https://taskflow.vercel.app",
-    repo: "https://github.com/seuuser/taskflow",
+      "Aplicação voltada ao gerenciamento eficiente de tarefas, oferecendo um fluxo simples e ágil para aumentar a produtividade.",
+    stack: ["React", "Tailwind", "Vite"],
+    demo: "https://taskify-rho-five.vercel.app",
+    repo: "https://github.com/Victornck/Taskify",
   },
+
   {
     title: "Valen Store",
     description:
@@ -31,11 +32,11 @@ function Projects() {
       </p>
 
       <div>
-        <div className="mt-10 grid gap-6 md:grid-cols-2 mx-auto p-6">
+        <div className="mt-10 max-w-6xl mx-auto px-4 space-y-6">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="space-y-2 p-6 rounded-xl bg-zinc-900 border border-zinc-800 text-left"
+              className="space-y-4 p-6 rounded-xl bg-zinc-900 border border-zinc-800 text-left"
             >
               <h3 className="text-xl font-semibold text-white">
                 {project.title}
