@@ -17,7 +17,7 @@ const techLogos = [
 function TechCarousel() {
   return (
     <div className="w-full overflow-hidden py-10">
-      <div className="flex w-max animate-carousel gap-14 items-center hover:[animation-play-state:paused]">
+      <div className="flex w-max animate-carousel gap-14 items-center">
         {[...techLogos, ...techLogos].map((logo, index) => (
           <img
             key={index}

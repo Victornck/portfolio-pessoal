@@ -1,6 +1,6 @@
 function Button() {
   return (
-    <div className="flex flex-col items-center justify-center text-center px-6 pt-4 space-y-2">
+    <div className="flex flex-col items-center justify-center text-center px-3 pt-4 space-y-2">
       <div className="flex gap-6 pt-4">
         <a
           href="#contact"
@@ -10,7 +10,7 @@ function Button() {
         </a>
 
         <a
-          className="border border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition"
+          className="border border-white px-8 py-3 rounded-full font-semibold hover:bg-gradient-to-r from-orange-400 to-purple-500 hover:text-white transition hover:border-transparent "
           href="/victor-berlinck.pdf"
           target="_blank"
           rel="noopener noreferrer"
