@@ -31,7 +31,7 @@ function ExperiencePage() {
             <div className="flex items-center gap-3">
               <GitBranch className="w-5 h-5 text-purple-400" />
 
-              <div className=" w-full flex justify-between items-center">
+              <div className=" w-full flex justify-between items-center text-left">
                 <h3 className="text-xl font-semibold text-white">
                   {experience.title}
                 </h3>
