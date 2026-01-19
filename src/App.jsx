@@ -1,4 +1,5 @@
 import Button from "./Pages/Button";
+import Contact from "./Pages/Contact.jsx";
 import HeaderComponent from "./Pages/HeaderComponent";
 import ProgrammingLanguage from "./Pages/ProgrammingLanguage";
 import Projects from "./Pages/Projects.jsx";
@@ -15,6 +16,7 @@ function App() {
       <ProgrammingLanguage />
       <TechCarousel />
       <Projects />
+      <Contact />
     </div>
   );
 }
