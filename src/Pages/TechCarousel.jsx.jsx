@@ -10,6 +10,8 @@ const techLogos = [
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
 ];
 
 function TechCarousel() {
@@ -21,8 +23,9 @@ function TechCarousel() {
             key={index}
             src={logo}
             alt="Tecnologia"
-            className="h-12 grayscale opacity-70 hover:opacity-100 hover:grayscale-0"
+            className= "h-12 grayscale opacity-70 hover:opacity-100 hover:grayscale-0"
           />
+          
         ))}
       </div>
     </div>

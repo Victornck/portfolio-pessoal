@@ -21,7 +21,7 @@ export default {
   			}
   		},
   		animation: {
-  			carousel: 'carousel 60s linear infinite'
+  			carousel: 'carousel 30s linear infinite'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
