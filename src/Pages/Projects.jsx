@@ -1,5 +1,5 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-
+import { Separator } from "@/components/ui/separator";
 
 const projects = [
   {
@@ -35,12 +35,14 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="p-6 rounded-xl bg-zinc-900 border border-zinc-800 text-left"
+              className="space-y-2 p-6 rounded-xl bg-zinc-900 border border-zinc-800 text-left"
             >
               <h3 className="text-xl font-semibold text-white">
                 {project.title}
               </h3>
-
+              <div className="opacity-30">
+                <Separator />
+              </div>
               <p className="mt-2 text-zinc-400">{project.description}</p>
 
               <div className="flex flex-wrap gap-2 mt-4">
