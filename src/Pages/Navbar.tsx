@@ -33,13 +33,8 @@ function Navbar() {
 
   {/* LOGO / NOME */}
   <div className="flex flex-col leading-tight">
-    <span className="text-lg font-bold text-white">
-      Victor Berlinck
-    </span>
-
-    {/* Só aparece no mobile */}
-    <span className="text-sm text-orange-400 md:hidden">
-      Dev
+    <span className="bg-gradient-to-r from-orange-400 to-purple-500 bg-clip-text text-transparent font-bold">
+      Berlinck.dev
     </span>
   </div>
 
