@@ -61,7 +61,7 @@ function TechCarousel() {
                   key={index}
                   src={logo}
                   alt="Tecnologia"
-                  className="h-12 opacity-70 hover:opacity-100 hover:grayscale-0"
+                  className="h-12"
                 />
               ))}
             </div>
