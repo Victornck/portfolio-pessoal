@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled, active] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -30,38 +30,40 @@ function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
-        <div>
-          <span className="font-semibold text-lg">Victor Berlinck</span>
-          <p className="font-light bg-gradient-to-r from-orange-400 to-purple-500 bg-clip-text text-transparent">
-            Dev
-          </p>
-        </div>
 
-        {/* Menu */}
-        <ul className="flex gap-6">
-          {links.map((link) => (
-            <li key={link.href} className="relative">
-              <motion.a
-                href={link.href}
-                className="text-gray-300 hover:text-white transition-colors"
-                whileHover="hover"
-              >
-                {link.label}
+  {/* LOGO / NOME */}
+  <div className="flex flex-col leading-tight">
+    <span className="text-lg font-bold text-white">
+      Victor Berlinck
+    </span>
 
-                <motion.span
-                  className="absolute left-0 -bottom-1 h-[2px] w-full bg-purple-500"
-                  initial={{ scaleX: 0 }}
-                  variants={{
-                    hover: { scaleX: 1 },
-                  }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                  style={{ originX: 0 }}
-                />
-              </motion.a>
-            </li>
-          ))}
-        </ul>
-      </div>
+    {/* Só aparece no mobile */}
+    <span className="text-sm text-orange-400 md:hidden">
+      Dev
+    </span>
+  </div>
+
+  {/* MENU — só desktop */}
+  <ul className="hidden md:flex gap-6">
+    {links.map((link) => (
+      <li key={link.href} className="relative">
+        <a
+          href={`#${link.href}`}
+          className="text-gray-400 hover:text-white transition"
+        >
+          {link.label}
+        </a>
+
+        {active === link.href && (
+          <motion.div
+            layoutId="active-underline"
+            className="absolute left-0 -bottom-1 h-[2px] w-full bg-purple-500"
+          />
+        )}
+      </li>
+    ))}
+  </ul>
+</div>
     </motion.nav>
   );
 }
