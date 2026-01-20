@@ -19,6 +19,14 @@ function App() {
       <Projects />
       <ExperiencePage />
       <Contact />
+      <div>
+        <footer className="bg-black/80 backdrop-blur-md border-t border-purple-500/30 py-8 text-center">
+        <p className="text-gray-400">
+          &copy; 2025 Victor Berlinck. Todos os direitos reservados.
+        </p>
+        <p className="text-gray-500 text-sm mt-2">Desenvolvido com React & TailWind</p>
+      </footer>
+      </div>
     </div>
   );
 }
