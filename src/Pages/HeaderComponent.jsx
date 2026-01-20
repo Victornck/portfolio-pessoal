@@ -1,6 +1,9 @@
 function HeaderComponent() {
   return (
-    <div className="flex flex-col items-center justify-center text-center px-6 pt-32 space-y-10">
+    <section
+      id="hero"
+      className="flex flex-col items-center justify-center text-center px-6 pt-32 space-y-10"
+    >
       {/* <div className="w-36 h-36 rounded-full bg-gradient-to-tr from-orange-400 to-purple-500 flex items-center justify-center">
         <img
           src="/avatar.png"
@@ -21,7 +24,7 @@ function HeaderComponent() {
         modernas, escaláveis e bem estruturadas, utilizando tecnologias atuais
         para resolver problemas reais de pessoas e empresas.
       </p>
-    </div>
+    </section>
   );
 }
 

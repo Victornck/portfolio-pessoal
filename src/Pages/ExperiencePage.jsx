@@ -12,7 +12,7 @@ const experiences = [
 
 function ExperiencePage() {
   return (
-    <div className="mt-24 text-center">
+    <section id="experience" className="mt-24 text-center">
       <div>
         <span className="bg-gradient-to-r from-orange-400 to-purple-500 bg-clip-text text-transparent font-bold text-4xl">
           EXPERIÊNCIA
@@ -49,7 +49,7 @@ function ExperiencePage() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
