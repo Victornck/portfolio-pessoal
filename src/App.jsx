@@ -24,11 +24,13 @@ function App() {
       <Contact />
       <div>
         <footer className="mt-8 bg-black/80   py-8 text-center">
-        <p className="text-gray-400">
-          &copy; 2025 Victor Berlinck. Todos os direitos reservados.
-        </p>
-        <p className="text-gray-500 text-sm mt-2">Desenvolvido com React & TailWind</p>
-      </footer>
+          <p className="text-gray-400">
+            &copy; 2025 Victor Berlinck. Todos os direitos reservados.
+          </p>
+          <p className="text-gray-500 text-sm mt-2">
+            Desenvolvido com React & TailWind
+          </p>
+        </footer>
       </div>
     </div>
   );

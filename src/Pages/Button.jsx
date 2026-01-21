@@ -9,7 +9,17 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-const certificate = [];
+import SelfCheckup from "../assets/certificados/bootcamp.png";
+
+const Certificates = [
+  {
+    id: 1,
+    img: SelfCheckup,
+    title: "BootCamp SelfCheckUp",
+    descricao:
+      "Formação prática em React, abordando componentização, hooks, gerenciamento de estado e boas práticas front-end.",
+  },
+];
 
 function Button() {
   return (
@@ -21,24 +31,36 @@ function Button() {
               <GalleryVerticalEnd />
               Ver certificados
             </DialogTrigger>
-            <DialogContent>
+            <DialogContent className="max-w-4xl max-h-[80vh] overflow-hidden">
               <DialogHeader>
-                <DialogTitle>Are you absolutely sure?</DialogTitle>
-                <DialogDescription>
-                  This action cannot be undone. This will permanently delete
-                  your account and remove your data from our servers.
+                <DialogTitle className="text-xl">Meus Certificados</DialogTitle>
+
+                <DialogDescription className="text-sm">
+                  Cursos e formações concluídas ao longo da minha jornada como
+                  desenvolvedor.
                 </DialogDescription>
               </DialogHeader>
-              <div className="flex flex-wrap gap-4 justify-center mt-4">
-              {[...certificate].map((logo, index) => (
-                <img
-                  key={index}
-                  src={/certificados/}
-                  alt="Tecnologia"
-                  className="h-12"
-                />
-              ))}
-            </div>
+
+              <div className="mt-6 overflow-y-auto max-h-[60vh] pr-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {Certificates.map((cert) => (
+                    <div
+                      key={cert.id}
+                      className="rounded-xl border bg-muted/50 p-4 hover:shadow-lg transition"
+                    >
+                      <img
+                        src={cert.img}
+                        alt={cert.title}
+                        className="rounded-lg object-contain mb-3"
+                      />
+                      <h3 className="text-sm font-semibold">{cert.title}</h3>
+                      <p className="text-xs text-muted-foreground">
+                        {cert.descricao}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </DialogContent>
           </Dialog>
         </div>

@@ -57,12 +57,7 @@ function TechCarousel() {
 
             <div className="flex flex-wrap gap-4 justify-center mt-4">
               {[...techLogos].map((logo, index) => (
-                <img
-                  key={index}
-                  src={logo}
-                  alt="Tecnologia"
-                  className="h-12"
-                />
+                <img key={index} src={logo} alt="Tecnologia" className="h-12" />
               ))}
             </div>
           </DialogContent>
