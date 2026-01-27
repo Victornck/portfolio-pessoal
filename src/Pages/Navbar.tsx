@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#0F0F0F] shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center ">
+      <div className="max-w-7xl mx-auto px-6 h-14 flex justify-between items-center">
         {/* LOGO / NOME */}
         <div className="flex space-x-2 leading-tight items-center">
           <img className="w-6 h-6" src="/logo.png" alt="logo" />
