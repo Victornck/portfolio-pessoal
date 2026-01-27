@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dialog";
 
 import SelfCheckup from "../assets/certificados/bootcamp.png";
+
 import CertificadoJava from "../assets/certificados/CertificadoJava.png";
 
 const Certificates = [
