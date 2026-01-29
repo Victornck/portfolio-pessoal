@@ -12,12 +12,19 @@ const projects = [
   },
 
   {
-    title: "Valen Store",
+    title: "Serve Up",
     description:
-      "E-commerce de maquiagens com layout responsivo e SEO otimizado.",
-    stack: ["React", "Vite", "CSS"],
-    demo: "https://valen-store.vercel.app",
-    repo: "https://github.com/seuuser/valen-store",
+      "Aplicação voltada à simulação de um totem de autoatendimento para fast foods, oferecendo um fluxo simples e intuitivo para realização de pedidos de forma rápida e eficiente.",
+    stack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
+      "PostgreSQL",
+    ],
+    demo: "https://serve-up-tl1l.vercel.app/fsw-donalds",
+    repo: "https://github.com/Victornck/Serve-up",
   },
 ];
 
