@@ -42,13 +42,28 @@ const Certificates = [
 function Button() {
   return (
     <div className="flex flex-col items-center justify-center text-center px-3 pt-4 space-y-2">
-      <div className="flex gap-6 pt-4">
+      <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
         <div>
           <Dialog>
-            <DialogTrigger className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:opacity-90 transition inline-flex items-center justify-center">
-              <GalleryVerticalEnd />
+            <DialogTrigger
+              className="
+      w-full sm:w-auto
+      sm:min-w-[220px]
+      h-12
+      px-6
+      bg-white text-black
+      rounded-full
+      font-semibold
+      inline-flex items-center justify-center gap-2
+      whitespace-nowrap
+      hover:opacity-90
+      transition
+    "
+            >
+              <GalleryVerticalEnd size={18} />
               Ver certificados
             </DialogTrigger>
+
             <DialogContent className="max-w-4xl max-h-[80vh] overflow-hidden">
               <DialogHeader>
                 <DialogTitle className="text-xl">Meus Certificados</DialogTitle>
@@ -84,10 +99,26 @@ function Button() {
         </div>
 
         <a
-          className="border border-white px-8 py-3 rounded-full font-semibold hover:bg-gradient-to-r from-orange-400 to-purple-500 hover:text-white transition hover:border-transparent "
           href="/victor-berlinck.pdf"
           target="_blank"
           rel="noopener noreferrer"
+          className="
+      w-full sm:w-auto
+      sm:min-w-[220px]
+      h-12
+      px-6
+      border border-white
+      rounded-full
+      font-semibold
+      inline-flex items-center justify-center
+      whitespace-nowrap
+      hover:bg-gradient-to-r
+      hover:from-orange-400
+      hover:to-purple-500
+      hover:text-white
+      hover:border-transparent
+      transition
+    "
         >
           Visualizar Currículo
         </a>
