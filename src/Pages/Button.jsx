@@ -13,6 +13,8 @@ import SelfCheckup from "../assets/certificados/bootcamp.png";
 
 import CertificadoJava from "../assets/certificados/CertificadoJava.png";
 
+import CertificadoJavaSpring from "../assets/certificados/CertificadoMinicursoJava.png";
+
 const Certificates = [
   {
     id: 1,
@@ -22,11 +24,18 @@ const Certificates = [
       "Formação prática em React, abordando componentização, hooks, gerenciamento de estado e boas práticas front-end.",
   },
   {
-    id: 1,
+    id: 2,
     img: CertificadoJava,
     title: "Lógica de Programação em Java",
     descricao:
       "Lógica de programação, algoritmos e estruturas básicas em Java.",
+  },
+  {
+    id: 3,
+    img: CertificadoJavaSpring,
+    title: "Desenvolvimento Back-end em Java",
+    descricao:
+      "Criação de API REST com Spring Boot, integração com banco de dados, implementação de segurança, tratamento de exceções e deploy.",
   },
 ];
 
