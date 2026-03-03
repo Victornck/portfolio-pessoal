@@ -9,7 +9,10 @@ import TechCarousel from "./Pages/TechCarousel.jsx.jsx";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0F0F0F] text-white font-poppins">
+    <div className="min-h-screen bg-gradient-to-br from-black via-zinc-900 to-black text-white font-poppins">
+      <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-green-400/20 rounded-full blur-3xl animate-pulse-slow opacity-35"></div>
+      <div className="absolute -bottom-70 -right-40 w-[500px] h-[500px] bg-green-400/20 rounded-full blur-3xl animate-pulse-slow opacity-15"></div>
+
       <Navbar />
 
       <div>

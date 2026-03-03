@@ -9,7 +9,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { GitBranch } from "lucide-react";
 
 const techLogos = [
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
@@ -25,6 +24,7 @@ const techLogos = [
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
 ];
 
 function TechCarousel() {

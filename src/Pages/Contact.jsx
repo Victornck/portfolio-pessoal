@@ -28,7 +28,11 @@ const contacts = [
 function Contact() {
   return (
     <section id="contact" className="mt-24 text-center max-w-6xl mx-auto px-4">
-      <span className="bg-gradient-to-r from-orange-400 to-purple-500 bg-clip-text text-transparent font-bold text-4xl">
+      <span className="bg-gradient-to-r 
+            from-green-300 
+            to-green-700 
+            bg-200%
+            animate-gradient bg-clip-text text-transparent font-bold text-4xl">
         CONTATO
       </span>
       <p className="text-center opacity-55">Entre em contato comigo</p>

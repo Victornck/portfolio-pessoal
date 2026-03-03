@@ -113,9 +113,9 @@ function Button() {
       inline-flex items-center justify-center
       whitespace-nowrap
       hover:bg-gradient-to-r
-      hover:from-orange-400
-      hover:to-purple-500
-      hover:text-white
+      hover:from-green-300 
+      hover:to-green-700 
+      hover:text-gray-900
       hover:border-transparent
       transition
     "
