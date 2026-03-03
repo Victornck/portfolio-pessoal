@@ -9,12 +9,12 @@ import TechCarousel from "./Pages/TechCarousel.jsx.jsx";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-zinc-900 to-black text-white font-poppins">
-      <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-green-400/20 rounded-full blur-3xl animate-pulse-slow opacity-35"></div>
-      <div className="absolute -bottom-70 -right-40 w-[500px] h-[500px] bg-green-400/20 rounded-full blur-3xl animate-pulse-slow opacity-15"></div>
-
+    <div className="relative min-h-screen overflow-x-hidden bg-gradient-to-br from-black via-zinc-900 to-black text-white font-poppins">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-green-400/20 rounded-full blur-3xl opacity-30 animate-pulse-slow" />
+        <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-green-400/20 rounded-full blur-3xl opacity-15 animate-pulse-slow" />
+      </div>
       <Navbar />
-
       <div>
         <HeaderComponent />
         <Button />
